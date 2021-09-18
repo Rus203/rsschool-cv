@@ -15,8 +15,8 @@ Hello. I'm Ruslan and I 'm to becoma a programmer. I graduated the second course
 * Java
 * SQL
 * HTML
-* CSS
-* JavaScript
+* CSS3
+* JavaScript(ES6);
 
 ## Examples of code
 ```
