@@ -1,4 +1,7 @@
-html {
+
+*{
+  margin: 0;
+  padding: 0;
   scroll-behavior: smooth;
 }
 
@@ -9,10 +12,6 @@ body{
   color: #182528;
   background-color: #f2f2f2;
   margin-top: -5%;
-}
-
-li {
-  padding-bottom: 5px;
 }
 
 a {
@@ -47,6 +46,15 @@ h4 {
   margin: 10px;
 }
 
+p {
+  padding: 10px;
+}
+
+ul {
+  padding: 0 15px 15px 45px; ;
+}
+
+
 footer {
   display: flex;
   justify-content: space-around;
@@ -56,8 +64,14 @@ footer {
   font-weight: 700;
 }
 
+#my_projects
+{
+  text-align: center;
+  padding-bottom: 5%;
+}
+
 .container {
-  margin: 15px auto;
+  margin: 70px auto 15px auto;
   font-size: 1.7em;
   line-height: 1.5em;
   box-shadow: 0 0 30px #888888;
@@ -77,8 +91,6 @@ footer {
 .right_column {
  width: 60%;
  background-color: #65cdb7;
- padding-right: 15px;
- padding-left: 15px;
 }
 
 #me {
@@ -86,19 +98,18 @@ footer {
 }
 
 .avatar {
-  width: 273px;
-  height: 207px;
+  width: 100%;
+  height: 75%;
 }
 
 .burger {
   width: 32px; 
   height: 18px;
   left: 85%;
-  top: 4.5%;
+  top: 4%;
   position: absolute;
   cursor: pointer;
 }
-
 
 .menu
 {
@@ -106,7 +117,6 @@ footer {
   height: 100vh;
   position: fixed;
   padding: 15px 0;
-  
   top: 0;
   left: 0;
   background: rgb(63, 90, 83, 0.9);
@@ -141,15 +151,7 @@ footer {
   border-radius: 3px;
   border: none;
   margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.bg_color_contacts {
-  background-color: #429f77;
-}
-
-.bg_color_skills {
-  background-color: #00897b ;
+  margin-bottom: 20px;
 }
 
 .bg_code {
@@ -173,9 +175,14 @@ footer {
   height: 48px;
 }
 
-.player {
-  width: 480px;
-  height: 270px;
+.my_project { 
+  display: flex;
+  justify-content: space-around;
+}
+
+.my_project_item { 
+  width: 90%;
+  height: 80%;
 }
 
 /* Responsive starts here */
@@ -213,11 +220,6 @@ footer {
 		width: 720px;
 	}
 
-  .player {
-    width: 90%;
-    height: 90%;
-  }
-
   .bg_code {
     font-size: 0.7em;
   }
@@ -248,12 +250,6 @@ footer {
   .right_column {
     width: 100%;
     padding: 0;
-  }
-
-  .player {
-    width: 100%;
-    height: 160px;
-    /* margin-bottom: -7px; */
   }
 
   .text {
@@ -299,18 +295,21 @@ footer {
   .left_column  {
     width: 100%;
     padding-top: 15px;
+    background-color: #65cdb7;
   }
 
   .right_column {
     width: 100%;
     padding: 0;
-    
+  }
+
+  .avatar {
+    margin-bottom: -2%;
   }
 
   .player {
     width: 100%;
     height: 190px;
-    /* margin-bottom: -7px; */
   }
 
   .text {
@@ -334,6 +333,7 @@ footer {
 
   h1 {
     text-align: start;
+    margin: 20px;
   }
   
   .block_of_burger {
@@ -344,12 +344,17 @@ footer {
     display: none;
   }
   
-  .experiment {
+  .statusBurger {
     display: none;
   }
   
-  .experiment2 {
+  .statusMenu {
     display: block;
+  }
+
+  .my_project { 
+    display: block;
+    text-align: center;
   }
 }
 
