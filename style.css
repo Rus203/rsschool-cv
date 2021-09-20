@@ -4,6 +4,7 @@ body{
   font-weight: 400;
   color: #182528;
   background-color: #f2f2f2;
+  margin: 0;
 }
 
 li {
@@ -23,10 +24,6 @@ a:active {
   color: #e7c739;
 }
 
-p, pre {
-  margin: 0;
-  margin: 0;
-}
 
 main {
   display: flex;
@@ -40,6 +37,7 @@ h2 {
 h1 {
   margin: 10px;
   font-size: 1.7em;
+  text-align: center;
 }
 
 h4 {
@@ -80,7 +78,7 @@ footer {
  padding-left: 15px;
 }
 
-.me {
+#me {
   text-align: center;
 }
 
@@ -89,11 +87,42 @@ footer {
   height: 207px;
 }
 
-.section
+
+.burger {
+  width: 32px; 
+  height: 18px;
+  left: 87%;
+  top: 8.3%;
+  position: absolute;
+  cursor: pointer;
+}
+
+
+.menu
 {
+  width: 100%;
+  position: absolute;
+  padding: 15px 0;
+  top: 2.5%;
+  left: 0;
+  background: rgb(63, 90, 83, 0.9);
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
+  justify-content: space-around;
+  transition: ease-in 0.1s;
+}
+
+.menu > ul {
+  margin: 0;
+  padding: 0;
+}
+
+.menu ul > li {
+  list-style-type: none;
+}
+
+.menu ul > li > a {
+  color: white;
 }
 
 .title_section {
@@ -152,12 +181,28 @@ footer {
 	.container {
 		width: 1024px;
 	}
+
+  .block_of_burger {
+    display: none;
+  }
+
+  .show_menu {
+    display: none;
+  }
 }
 
-@media screen and (-width: 1199px) {
+@media screen and (max-width: 1199px) {
 	.container {
 		width: 960px;
 	}
+
+  .block_of_burger {
+    display: none;
+  }
+
+  .show_menu {
+    display: none;
+  } 
 }
 
 @media screen and (max-width: 991px) {
@@ -173,6 +218,14 @@ footer {
   .bg_code {
     font-size: 0.7em;
   }
+
+  .block_of_burger {
+    display: none;
+  }
+
+  .show_menu {
+    display: none;
+  }  
 }
 
 @media screen and (max-width: 767px) {
@@ -187,18 +240,17 @@ footer {
   .left_column  {
     width: 100%;
     padding-top: 15px;
-   
   }
 
   .right_column {
     width: 100%;
     padding: 0;
-    
   }
 
   .player {
     width: 100%;
     height: 160px;
+    /* margin-bottom: -7px; */
   }
 
   .text {
@@ -219,6 +271,14 @@ footer {
   .bg_code {
     font-size: 0.7em;
   }
+
+  .block_of_burger {
+    display: none;
+  }
+
+  .show_menu {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 575px) {
@@ -226,6 +286,7 @@ footer {
 		width: 100%;
 		padding: 0;
     margin: 0;
+    box-shadow: none;
 	}
 
   main {
@@ -247,6 +308,7 @@ footer {
   .player {
     width: 100%;
     height: 160px;
+    /* margin-bottom: -7px; */
   }
 
   .text {
@@ -267,6 +329,25 @@ footer {
   .bg_code {
     font-size: 0.5em;
   }
+
+  h1 {
+    text-align: start;
+  }
   
+  .block_of_burger {
+    display: block;
+  }
+  
+  .show_menu {
+    display: none;
+  }
+  
+  .experiment {
+    display: none;
+  }
+  
+  .experiment2 {
+    display: block;
+  }
 }
 
